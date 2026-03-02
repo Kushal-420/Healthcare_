@@ -6,7 +6,7 @@ import type { MedverifyProgram } from "./medverify_program";
 
 // Change to "devnet" or "mainnet-beta" for production
 export const NETWORK = "http://localhost:8899";
-export const PROGRAM_ID = new PublicKey("CAz5m1avkahj9Mud1qyH1HW7xjAV3wWxfFa3UrjdFWvh");
+export const PROGRAM_ID = new PublicKey("BaYoL7uwvc7VfPJnG6LEY3DHLb5PSq1c2YwzVNLmKjRq");
 
 export function getProgram(wallet: AnchorWallet): Program<MedverifyProgram> {
   const connection = new Connection(NETWORK, "confirmed");

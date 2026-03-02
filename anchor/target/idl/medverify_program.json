@@ -9,7 +9,19 @@
   "instructions": [
     {
       "name": "register_doctor",
-      "discriminator": [189, 164, 237, 143, 138, 160, 251, 115],
+      "docs": [
+        "Called once by an admin to register a doctor on-chain."
+      ],
+      "discriminator": [
+        181,
+        67,
+        216,
+        215,
+        132,
+        240,
+        147,
+        125
+      ],
       "accounts": [
         {
           "name": "doctor_record",
@@ -18,7 +30,14 @@
             "seeds": [
               {
                 "kind": "const",
-                "value": [100, 111, 99, 116, 111, 114]
+                "value": [
+                  100,
+                  111,
+                  99,
+                  116,
+                  111,
+                  114
+                ]
               },
               {
                 "kind": "arg",
@@ -74,7 +93,19 @@
     },
     {
       "name": "revoke_doctor",
-      "discriminator": [100, 88, 146, 123, 73, 190, 203, 89],
+      "docs": [
+        "Revoke a doctor's registration (admin only)."
+      ],
+      "discriminator": [
+        4,
+        85,
+        201,
+        220,
+        151,
+        175,
+        32,
+        40
+      ],
       "accounts": [
         {
           "name": "doctor_record",
@@ -83,18 +114,29 @@
             "seeds": [
               {
                 "kind": "const",
-                "value": [100, 111, 99, 116, 111, 114]
+                "value": [
+                  100,
+                  111,
+                  99,
+                  116,
+                  111,
+                  114
+                ]
               },
               {
                 "kind": "account",
-                "path": "doctor_record.license_number"
+                "path": "doctor_record.license_number",
+                "account": "DoctorRecord"
               }
             ]
           }
         },
         {
           "name": "authority",
-          "signer": true
+          "signer": true,
+          "relations": [
+            "doctor_record"
+          ]
         }
       ],
       "args": []
@@ -103,7 +145,16 @@
   "accounts": [
     {
       "name": "DoctorRecord",
-      "discriminator": [86, 126, 242, 66, 227, 81, 230, 109]
+      "discriminator": [
+        234,
+        218,
+        23,
+        78,
+        235,
+        198,
+        219,
+        219
+      ]
     }
   ],
   "errors": [

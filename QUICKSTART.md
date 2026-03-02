@@ -19,7 +19,7 @@ cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
 avm install latest
 avm use latest
 
-# Verify
+# Verifycurl -sL https://run.surfpool.run/ | bash
 solana --version
 anchor --version
 ```

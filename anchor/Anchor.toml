@@ -3,13 +3,13 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-medverify_program = "CAz5m1avkahj9Mud1qyH1HW7xjAV3wWxfFa3UrjdFWvh"
+medverify_program = "BaYoL7uwvc7VfPJnG6LEY3DHLb5PSq1c2YwzVNLmKjRq"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

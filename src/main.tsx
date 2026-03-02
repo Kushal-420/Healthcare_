@@ -14,7 +14,8 @@ import { PhantomWalletAdapter } from "@solana/wallet-adapter-phantom";
 import "@solana/wallet-adapter-react-ui/styles.css";
 
 // Network configuration - change to "devnet" or "mainnet-beta" for production
-const NETWORK = "http://localhost:8899";
+// Change this line in src/main.tsx
+const NETWORK = "https://api.devnet.solana.com";
 
 function Root() {
   const wallets = useMemo(() => [new PhantomWalletAdapter()], []);

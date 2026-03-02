@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("CAz5m1avkahj9Mud1qyH1HW7xjAV3wWxfFa3UrjdFWvh"); // Program ID - will be updated after build
+declare_id!("BaYoL7uwvc7VfPJnG6LEY3DHLb5PSq1c2YwzVNLmKjRq"); // Program ID - will be updated after build
 
 #[program]
 pub mod medverify_program {
