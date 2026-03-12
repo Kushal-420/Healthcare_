@@ -4,8 +4,8 @@ import type { AnchorWallet } from "@solana/wallet-adapter-react";
 import idl from "./idl.json";
 import type { MedverifyProgram } from "./medverify_program";
 
-// Change to "devnet" or "mainnet-beta" for production
-export const NETWORK = "http://localhost:8899";
+// Devnet RPC endpoint
+export const NETWORK = "https://api.devnet.solana.com";
 export const PROGRAM_ID = new PublicKey("BaYoL7uwvc7VfPJnG6LEY3DHLb5PSq1c2YwzVNLmKjRq");
 
 export function getProgram(wallet: AnchorWallet): Program<MedverifyProgram> {
